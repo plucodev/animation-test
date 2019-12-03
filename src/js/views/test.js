@@ -39,6 +39,15 @@ export const Test = () => {
 					<h1>This content slid down. Thanks to React Spring</h1>
 				</animated.div>
 			)} */}
+
+			{items.map(i => (
+				<animated.div
+					key={i}
+					className="script-bf-box test"
+					style={{ transform: radians.interpolate(interp(i)) }}>
+					Test
+				</animated.div>
+			))}
 		</div>
 	);
 };
