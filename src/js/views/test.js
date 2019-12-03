@@ -24,8 +24,7 @@ export const Test = () => {
 		reset: true
 	});
 	return (
-		<div className="container">
-			<div>{count}</div>
+		<div className="container test">
 			{/* <div className="button-container">
 				<button onClick={() => displayContent(a => !a)} className="button">
 					Toggle Content
@@ -41,10 +40,7 @@ export const Test = () => {
 			)} */}
 
 			{items.map(i => (
-				<animated.div
-					key={i}
-					className="script-bf-box test"
-					style={{ transform: radians.interpolate(interp(i)) }}>
+				<animated.div key={i} className="script-bf-box " style={{ transform: radians.interpolate(interp(i)) }}>
 					Test
 				</animated.div>
 			))}
